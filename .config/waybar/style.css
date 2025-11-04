@@ -1,0 +1,172 @@
+@import "./rose-pine.css";
+
+* {
+  border: none;
+  border-radius: 0;
+  font-family: "JetBrainsMono Nerd Font";
+  font-weight: bold;
+  font-size: 16px;
+  min-height: 0;
+}
+
+tooltip {
+  background: @base;
+  border-radius: 10px;
+  border-width: 2px;
+  border-style: solid;
+  border-color: @overlay;
+}
+
+window#waybar {
+  /* background: rgba(21, 18, 27, 1); */
+  border: 1px solid @overlay;
+  background: @base;
+  color: @text;
+}
+
+window#waybar.empty #window {
+  border: none;
+}
+
+#workspaces button {
+  padding: 5px;
+  color: @highlightMed;
+  margin-right: 5px;
+}
+
+#workspaces button.active {
+  color: @text;
+}
+
+#workspaces button.focused {
+  color: @subtle;
+  background: @love;
+  border-radius: 10px;
+}
+
+#workspaces button.urgent {
+  color: @base;
+  background: @iris;
+  border-radius: 10px;
+  transition: background-color 0.5s;
+}
+
+#workspaces button:hover {
+  background: @highlightLow;
+  color: @text;
+  border-radius: 10px;
+  box-shadow: inherit;
+  text-shadow: inherit;
+  /* transition: none; */
+}
+
+#window,
+#clock,
+#language,
+#workspaces,
+#network,
+#bluetooth,
+#temperature,
+#memory,
+#battery,
+#pulseaudio,
+#backlight,
+#tray {
+  background: @base;
+  opacity: 0.9;
+  padding: 0px 10px;
+  margin: 3px 0px;
+  margin-top: 7px;
+  margin-bottom: 7px;
+  border: 1px solid @overlay;
+}
+
+#window {
+  border-radius: 10px;
+  margin-left: 60px;
+  margin-right: 60px;
+}
+
+#clock {
+  color: @gold;
+  border-radius: 10px 10px 10px 10px;
+  margin-left: 10px;
+}
+
+#language{
+  color: @rose;
+  border-radius: 10px;
+  margin-left: 10px;
+}
+
+#language:hover{
+    background: @highlightLow; 
+}
+
+#workspaces {
+  background: @base;
+  border-radius: 10px;
+  margin-left: 10px;
+  margin-right: 10px;
+  padding-right: 0px;
+  padding-left: 5px;
+}
+
+#network {
+  color: @love;
+  border-radius: 10px 0px 0px 10px;
+  border-right: 0px;
+}
+
+#bluetooth {
+  color: @gold;
+  border-radius: 0px 0px 0px 0px;
+  border-right: 0px;
+}
+
+#temperature {
+  color: @rose;
+  border-radius: 0px 0px 0px 0px;
+  border-right: 0px;
+}
+
+#temperature.critical {
+  color: @love;
+}
+
+#memory {
+  color: @foam;
+}
+
+#battery {
+  color: @foam;
+  border-radius: 0 10px 10px 0;
+  margin-right: 10px;
+  border-left: 0px;
+}
+
+#pulseaudio {
+  color: @iris;
+  border-radius: 10px 0px 0px 10px;
+  border-right: 0px;
+}
+
+/* #pulseaudio.microphone {
+  color: #c4a7e7;
+  border-left: 0px;
+  border-right: 0px;
+  border-radius: 0px 10px 10px 0px;
+  margin-right: 10px;
+} */
+
+#backlight {
+  color: @text;
+  border-radius: 0px 10px 10px 0px;
+  margin-right: 10px;
+}
+
+#tray {
+  border-radius: 10px;
+  margin-right: 10px;
+}
+

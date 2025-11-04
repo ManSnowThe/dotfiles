@@ -1,0 +1,29 @@
+{
+    "window.zoomLevel": 1,
+    "editor.fontFamily": "'JetBrainsMono Nerd Font', 'Noto Sans CJK'",
+    "editor.fontSize": 14,
+    "editor.formatOnType": true,
+    "editor.unicodeHighlight.ambiguousCharacters": false,
+    "workbench.colorTheme": "Rosé Pine (no italics)",
+    "workbench.iconTheme": "catppuccin-mocha",
+    "chat.commandCenter.enabled": false,
+    "chat.mcp.enabled": false,
+    "chat.agent.enabled": false,
+    "update.mode": "manual",
+    "gopls": {
+        "ui.semanticTokens": true,
+    },
+    "go.buildTags": "dev",
+    "go.testEnvVars": {
+        "NO_INFO": "1"
+    },
+    "containers.containerClient": "com.microsoft.visualstudio.containers.docker",
+    "telemetry.telemetryLevel": "off",
+    "workbench.enableExperiments": false,
+    "extensions.ignoreRecommendations": true,
+    "editor.formatOnSave": true,
+}
+
+// Rose Pine override
+// "editorCursor.foreground": "#e0def4",
+// "editor.selectionBackground": "#31748f80",
